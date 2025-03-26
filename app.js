@@ -38,5 +38,12 @@ function calculatePasswordStrength(password) {
 
     return totalStrength * 25; // Scale the strength to a percentage (0-100)
 }
+function copyPassword() {
+    const passwordBox = document.getElementById("password");
+    navigator.clipboard.writeText(passwordBox.value)
+        .then(() => alert("Password copied to clipboard!"))
+        .catch(() => alert("Failed to copy password."));
+}
+
 
 console.log(allChars);
