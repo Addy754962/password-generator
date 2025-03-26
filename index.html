@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="gA">Generate a <br><span>Random Password</span></h1>
+        <div class="displayBox">
+            <input type="text" placeholder="Password" id="password">
+            <img src="rpg_img/images/copy.png" alt="Copy to clipboard icon">
+        </div>
+        <div id="strengthIndicator" class="strength-indicator"></div>
+        <button class="button" onclick="generatePassword()">
+            <img src="rpg_img/images/generate.png" alt="Generate password icon">
+            Generate Password
+        </button>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
